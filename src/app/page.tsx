@@ -6,6 +6,7 @@ import Marquee from '@/components/Marquee/Marquee'
 import Process from '@/components/Process/Process'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import Contact from '@/components/Contact/Contact'
+import FAQ from '@/components/FAQ/FAQ'
 import CTA from '@/components/CTA/CTA'
 import Footer from '@/components/Footer/Footer'
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Process />
         {/* <Testimonials /> */}
         <Contact />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
