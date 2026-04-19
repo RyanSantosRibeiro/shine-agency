@@ -122,7 +122,6 @@ export default function Services() {
             <motion.div
               key={service.title}
               className={`card ${styles.card} ${styles[`card-${service.color}`]}`}
-              variants={itemVariants}
               whileHover={{ y: -6 }}
             >
               <div className={`${styles.iconWrapper} ${styles[`icon-${service.color}`]}`}>

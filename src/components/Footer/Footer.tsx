@@ -45,13 +45,10 @@ export default function Footer() {
               cuidado e resultado real.
             </p>
             <div className={styles.socials}>
-              <a href="https://instagram.com/shineagency" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="MessageCircle">
+              <a href="#contato" className={styles.social} aria-label="Contato">
                 <MessageCircle size={18} />
               </a>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="WhatsApp">
-                <MessageCircle size={18} />
-              </a>
-              <a href="mailto:hello@shineagency.com.br" className={styles.social} aria-label="E-mail">
+              <a href="mailto:artificialwebservices@gmail.com" className={styles.social} aria-label="E-mail">
                 <Mail size={18} />
               </a>
             </div>
