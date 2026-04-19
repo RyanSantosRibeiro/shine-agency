@@ -1,0 +1,199 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  
+}
+
+/* Light gradient background */
+.bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 80% at 80% 80%,
+    transparent 0%,
+    rgb(23, 7, 36)120%
+  );
+  z-index: 0;
+}
+
+/* Grid pattern */
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(107, 33, 168, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 33, 168, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+  z-index: 0;
+}
+
+/* Orbs */
+.orb1 {
+  width: 700px;
+  height: 700px;
+  top: -15%;
+  right: -10%;
+  opacity: 0.3;
+  animation: float 10s ease-in-out infinite;
+}
+
+.orb2 {
+  width: 500px;
+  height: 500px;
+  bottom: -5%;
+  left: -5%;
+  opacity: 0.2;
+  animation: float-reverse 12s ease-in-out infinite;
+}
+
+.orb3 {
+  width: 400px;
+  height: 400px;
+  top: 40%;
+  left: 40%;
+  opacity: 0.15;
+  animation: float 14s ease-in-out infinite 2s;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 1;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(107, 33, 168, 0.08);
+  border: 1px solid rgba(107, 33, 168, 0.15);
+  border-radius: 50px;
+  padding: 0.5rem 1.125rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.badgeIcon {
+  color: var(--color-accent);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* Headline */
+.headline {
+  margin-bottom: 1.75rem;
+  color: white;
+  font-size: clamp(2.75rem, 3.5vw, 4rem);
+  line-height: 1.05;
+  max-width: 800px;
+}
+
+.headlineBreak {
+  display: block;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: white;
+  max-width: 580px;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  opacity: .8;
+}
+
+/* CTAs */
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statValue {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Scroll indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.scrollIndicator:hover {
+  background: rgba(107, 33, 168, 0.05);
+  border-color: rgba(107, 33, 168, 0.2);
+  color: var(--color-accent);
+}
+
+.scrollArrow {
+  animation: float 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .ctas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,138 @@
+.section {
+  padding: var(--section-padding) 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, transparent 0%, rgba(107, 33, 168, 0.04) 50%, transparent 100%);
+}
+
+.orb {
+  width: 500px;
+  height: 500px;
+  top: 30%;
+  right: -10%;
+  opacity: 0.15;
+}
+
+.header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4.5rem;
+}
+
+.title { margin-bottom: 1rem; }
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Steps grid */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.step {
+  position: relative;
+  padding: 0 1.5rem;
+}
+
+.step:first-child { padding-left: 0; }
+.step:last-child { padding-right: 0; }
+
+/* Connector */
+.connector {
+  position: absolute;
+  top: 28px;
+  left: calc(50% + 28px);
+  width: calc(100% - 56px);
+  height: 2px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.connectorLine {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(201, 169, 110, 0.4) 0%, rgba(201, 169, 110, 0.15) 100%);
+  border-radius: 1px;
+  transform-origin: left center;
+}
+
+/* Step inner */
+.stepInner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Number */
+.stepNumber {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numberText {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  background: #ffffff;
+  border: 1.5px solid rgba(107, 33, 168, 0.3);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.step:hover .numberText {
+  background: rgba(107, 33, 168, 0.08); /* hover number text */
+  border-color: var(--color-accent);
+  box-shadow: 0 0 20px rgba(107, 33, 168, 0.15);
+}
+
+.numberRing {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px dashed rgba(107, 33, 168, 0.2);
+  animation: spin-slow 15s linear infinite;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .connector { display: none; }
+  .step { padding: 0; }
+}
+
+@media (max-width: 540px) {
+  .steps { grid-template-columns: 1fr; }
+}
