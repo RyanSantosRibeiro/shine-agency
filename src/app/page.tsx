@@ -7,6 +7,7 @@ import Process from '@/components/Process/Process'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import Contact from '@/components/Contact/Contact'
 import FAQ from '@/components/FAQ/FAQ'
+import BlogSlider from '@/components/BlogSlider/BlogSlider'
 import CTA from '@/components/CTA/CTA'
 import Footer from '@/components/Footer/Footer'
 
@@ -20,7 +21,7 @@ export default function Home() {
         <About />
         <Services />
         <Process />
-        {/* <Testimonials /> */}
+        <BlogSlider />
         <Contact />
         <FAQ />
         <CTA />

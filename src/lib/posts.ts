@@ -1,4 +1,6 @@
 import { postComoComecar } from './posts/como-comecar-produzir-conteudo-adulto'
+import { postFaceless } from './posts/modelo-faceless-sem-rosto-funciona'
+import { postQuantoGanha } from './posts/quanto-ganha-fazendo-conteudo-adulto'
 
 export interface Post {
   slug: string
@@ -11,6 +13,8 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  postQuantoGanha,
+  postFaceless,
   postComoComecar,
   {
     slug: 'privacy-supera-onlyfans',
