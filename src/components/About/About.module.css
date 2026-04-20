@@ -95,8 +95,7 @@
 /* Floating cards */
 .floatCard {
   position: absolute;
-  top: 12%;
-  right: -5%;
+  
   z-index: 3;
   display: flex;
   align-items: center;
@@ -104,19 +103,53 @@
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(201, 169, 110, 0.2);
   border-radius: 14px;
-  padding: 0.875rem 1.125rem;
+  padding: 0.875rem;
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 0 20px rgba(201, 169, 110, 0.08);
   white-space: nowrap;
+  width: 70px;
+  height: 70px;
 }
 
+.floatCard1 {
+  top: 12%;
+  right: -5%;
+  border-color: rgba(107, 33, 168, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 0 20px rgba(107, 33, 168, 0.08);
+}
 .floatCard2 {
   top: auto;
-  bottom: 12%;
+  bottom: 4%;
   right: auto;
   left: -5%;
   border-color: rgba(107, 33, 168, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 0 20px rgba(107, 33, 168, 0.08);
+}
+
+.floatCard3 {
+  top: -5%;
+  left: 10%;
+  right: auto;
+  border-color: rgba(145, 70, 255, 0.2);
+}
+
+.floatCard4 {
+  top: 50%;
+  right: -12%;
+  border-color: rgba(0, 175, 240, 0.2);
+}
+
+.floatCard5 {
+  bottom: 40%;
+  left: -12%;
+  right: auto;
+  border-color: rgba(233, 30, 99, 0.2);
+}
+
+.floatCard6 {
+  bottom: -5%;
+  right: 10%;
+  border-color: rgba(83, 252, 24, 0.2);
 }
 
 .floatIcon {
@@ -187,4 +220,8 @@
 
   .floatCard { right: 0; }
   .floatCard2 { left: 0; }
+  .floatCard3 { left: 5%; top: -5%; }
+  .floatCard4 { right: -5%; }
+  .floatCard5 { left: -5%; }
+  .floatCard6 { right: 5%; bottom: -5%; }
 }
