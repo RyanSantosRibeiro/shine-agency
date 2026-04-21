@@ -1,6 +1,9 @@
 import { postComoComecar } from './posts/como-comecar-produzir-conteudo-adulto'
 import { postFaceless } from './posts/modelo-faceless-sem-rosto-funciona'
 import { postQuantoGanha } from './posts/quanto-ganha-fazendo-conteudo-adulto'
+import { postPrivacyOQueE } from './posts/privacy-o-que-e-e-gratuito'
+import { postOnlyFansCriarConta } from './posts/onlyfans-criar-conta-passo-a-passo'
+import { postLivesAdultas } from './posts/ganhar-dinheiro-lives-adultas'
 
 export interface Post {
   slug: string
@@ -13,6 +16,9 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  postLivesAdultas,
+  postOnlyFansCriarConta,
+  postPrivacyOQueE,
   postQuantoGanha,
   postFaceless,
   postComoComecar,
