@@ -4,6 +4,7 @@ import { postQuantoGanha } from './posts/quanto-ganha-fazendo-conteudo-adulto'
 import { postPrivacyOQueE } from './posts/privacy-o-que-e-e-gratuito'
 import { postOnlyFansCriarConta } from './posts/onlyfans-criar-conta-passo-a-passo'
 import { postLivesAdultas } from './posts/ganhar-dinheiro-lives-adultas'
+import { postTikTokLive } from './posts/como-fazer-live-no-tiktok'
 
 export interface Post {
   slug: string
@@ -16,6 +17,7 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  postTikTokLive,
   postLivesAdultas,
   postOnlyFansCriarConta,
   postPrivacyOQueE,
