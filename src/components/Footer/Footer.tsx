@@ -12,7 +12,7 @@ const footerLinks = {
     { label: 'Depoimentos', href: '/#depoimentos' },
   ],
   Recursos: [
-    { label: 'Blog', href: '/blog' },
+    // { label: 'Blog', href: '/blog' },
     { label: 'Para criadoras', href: '/#servicos' },
     { label: 'FAQ', href: '/#contato' },
   ],
