@@ -23,6 +23,7 @@ export default function About() {
 
       <div className="container">
         <div className={styles.grid}>
+          
           {/* Left — visual */}
           <motion.div
             className={styles.visual}
@@ -31,6 +32,15 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
+            <p className="section-label">Modelos Shine</p>
+            <h2 className={`heading-lg ${styles.title}`}>
+              Nós cuidamos da parte técnica, {' '}
+              <span className="text-gradient-gold">e você cuida de si mesma</span>
+            </h2>
+            <p className={styles.lead}>
+              A Shine Agency não é uma agência comum. Nosso modelo é cuidar de toda parte burocrática e técnica, unindo <strong>alta viralização</strong> e
+              <strong> cuidado com seu bem-estar</strong> para garantir <strong>lucros reais</strong> e um <strong>estilo de vida leve</strong>.
+            </p>
             <div className={styles.visualInner}>
               {/* Floating label cards */}
               <motion.div
@@ -132,15 +142,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.15 }}
           >
-            <p className="section-label">Modelos Shine</p>
-            <h2 className={`heading-lg ${styles.title}`}>
-              Nós cuidamos da parte técnica, {' '}
-              <span className="text-gradient-gold">e você cuida de si mesma</span>
-            </h2>
-            <p className={styles.lead}>
-              A Shine Agency não é uma agência comum. Nosso modelo é cuidar de toda parte burocrática e técnica, unindo <strong>alta viralização</strong> e
-              <strong> cuidado com seu bem-estar</strong> para garantir <strong>lucros reais</strong> e um <strong>estilo de vida leve</strong>.
-            </p>
+            
 
             <ul className={styles.list}>
               {differentials.map((item, i) => (
