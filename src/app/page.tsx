@@ -4,6 +4,7 @@ import About from '@/components/About/About'
 import Services from '@/components/Services/Services'
 import Marquee from '@/components/Marquee/Marquee'
 import Process from '@/components/Process/Process'
+import Earnings from '@/components/Earnings/Earnings'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import Contact from '@/components/Contact/Contact'
 import FAQ from '@/components/FAQ/FAQ'
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Marquee />
         <About />
+        <Earnings />
         <Services />
         <Process />
         {/* <BlogSlider /> */}

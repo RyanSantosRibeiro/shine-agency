@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowDown, Sparkles, ChevronRight } from 'lucide-react'
 import styles from './Hero.module.css'
 import heroBg from '@/assets/hero.jpg'
+import heroBgMobile from '@/assets/hero-mobile.jpg'
 const stats = [
   { value: '4+', label: 'Redes Sociais gerenciadas' },
   { value: '5x', label: 'Crescimento médio' },

@@ -7,12 +7,13 @@ import styles from './About.module.css'
 import aboutImg from '@/assets/about-banner.jpg'
 
 const differentials = [
-  'Modelo Shine: Conforme você cresce, nós investimos - Eventos exclusivos, viagens e muito mais.',
-  'Profissionalização: Você é nossa maior estrela, então cuidamos de toda parte técnica para você focar no que importa.',
-  'Ajuda: Temos todo suporte necessário para sua saúde, academia e rede de estética.',
-  'Geração de Conteúdo: Produção de conteúdo de alta qualidade para as redes sociais.',
-  // [OF/Adult] Referência a upload/descrição/precificação em plataformas adultas — comentado para público geral
-  // 'Operação Invisível: Fazemos todo o gerenciamento, upload, descrições e precificação nas plataformas. Você só atua.',
+  { title: 'Setup de Sucesso', desc: 'Consultoria completa para escolher os melhores equipamentos e montar um cenário incrível.' },
+  { title: 'Suporte Técnico Especializado', desc: 'Cuidamos de configurações, overlays e áudio para sua live ter uma qualidade impecável.' },
+  { title: 'Blindagem Jurídica e Contábil', desc: 'Assessoria dedicada para você fechar contratos com marcas em segurança e sem dor de cabeça.' },
+  { title: 'Foco no seu Talento', desc: 'Deixe a parte chata com a gente. Nós gerenciamos tudo para que você só precise ligar a câmera e brilhar.' },
+  { title: 'Máquina de Conteúdo', desc: 'Extraímos os melhores momentos da sua live e transformamos em centenas de cortes virais para as redes sociais.' },
+  { title: 'Seu Bem-Estar em 1º Lugar', desc: 'Investimos na sua saúde mental e física, custeando psicólogo, academia e tratamentos estéticos.' },
+  { title: 'Aceleração Contínua', desc: 'Crescemos juntos. Quanto mais você evolui, mais investimos em viagens e acessos VIP para alavancar seu networking.' },
 ]
 
 export default function About() {
@@ -151,12 +152,11 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 + i * 0.08 }}
                 >
-                  <CheckCircle2
-                    size={18}
-                    className={styles.checkIcon}
-                    aria-hidden="true"
-                  />
-                  <span>{item}</span>
+                  <CheckCircle2 className={styles.checkIcon} size={24} />
+                  <div className={styles.listContent}>
+                    <span className={styles.listTitle}>{item.title}</span>
+                    <span className={styles.listDesc}>{item.desc}</span>
+                  </div>
                 </motion.li>
               ))}
             </ul>

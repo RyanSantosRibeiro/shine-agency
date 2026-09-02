@@ -149,7 +149,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className={styles.formGroup}>
+              {/* <div className={styles.formGroup}>
                 <label htmlFor="platforms" className={styles.label}>Plataformas que usa</label>
                 <input
                   id="platforms"
@@ -159,7 +159,7 @@ export default function Contact() {
                   value={formData.platforms}
                   onChange={handleChange}
                 />
-              </div>
+              </div> */}
 
               <div className={styles.formGroup}>
                 <label htmlFor="message" className={styles.label}>Me conte um pouco sobre você</label>

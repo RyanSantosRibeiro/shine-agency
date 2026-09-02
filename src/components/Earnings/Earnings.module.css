@@ -1,0 +1,391 @@
+.section {
+  position: relative;
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--color-bg) 0%, #f5f0ff 50%, var(--color-bg) 100%);
+}
+
+.orb1 {
+  width: 500px;
+  height: 500px;
+  top: 10%;
+  left: -10%;
+  opacity: 0.15;
+}
+
+.orb2 {
+  width: 400px;
+  height: 400px;
+  bottom: 5%;
+  right: -8%;
+  opacity: 0.12;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background: rgba(107, 33, 168, 0.06);
+  border: 1px solid rgba(107, 33, 168, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+.badgeIcon {
+  color: var(--color-primary);
+}
+
+.title {
+  margin-bottom: 1.25rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.subtitleHighlight {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Main content area */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Earnings projection card */
+.earningsCard {
+  background: linear-gradient(145deg, #ffffff 0%, #faf8ff 100%);
+  border: 1px solid rgba(107, 33, 168, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(107, 33, 168, 0.06);
+}
+
+.earningsCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+}
+
+.earningsLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.earningsScenario {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Revenue rows */
+.revenueList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.revenueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(107, 33, 168, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(107, 33, 168, 0.06);
+  transition: all var(--transition-fast);
+}
+
+.revenueRow:hover {
+  background: rgba(107, 33, 168, 0.06);
+  border-color: rgba(107, 33, 168, 0.12);
+  transform: translateX(4px);
+}
+
+.revenueSource {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.revenueIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  background: rgba(107, 33, 168, 0.08);
+  flex-shrink: 0;
+}
+
+.revenueName {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.revenueValue {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+/* Total */
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem;
+  background: linear-gradient(135deg, rgba(107, 33, 168, 0.08) 0%, rgba(201, 169, 110, 0.08) 100%);
+  border-radius: 16px;
+  border: 1.5px solid rgba(107, 33, 168, 0.15);
+}
+
+.totalLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.totalValue {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Scenario tabs */
+.scenarioTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.scenarioTab {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.scenarioTabActive {
+  background: var(--gradient-accent);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(107, 33, 168, 0.2);
+}
+
+.scenarioTab:not(.scenarioTabActive):hover {
+  background: rgba(107, 33, 168, 0.04);
+  border-color: rgba(107, 33, 168, 0.15);
+  color: var(--color-accent);
+}
+
+/* Benefits side */
+.benefitsSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.benefitsMessage {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(107, 33, 168, 0.04) 0%, rgba(201, 169, 110, 0.04) 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(107, 33, 168, 0.08);
+}
+
+.benefitsQuote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.benefitsQuoteHighlight {
+  font-style: normal;
+}
+
+.benefitsSubtext {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Benefit cards */
+.benefitCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  transition: all var(--transition-base);
+}
+
+.benefitCard:hover {
+  border-color: rgba(107, 33, 168, 0.15);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.benefitIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefitIconGold {
+  background: rgba(201, 169, 110, 0.12);
+  color: var(--color-primary);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.benefitIconAccent {
+  background: rgba(107, 33, 168, 0.08);
+  color: var(--color-accent);
+  border: 1px solid rgba(107, 33, 168, 0.15);
+}
+
+.benefitIconPink {
+  background: rgba(76, 29, 149, 0.08);
+  color: var(--color-accent-2);
+  border: 1px solid rgba(76, 29, 149, 0.15);
+}
+
+.benefitContent {
+  flex: 1;
+}
+
+.benefitTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.benefitDesc {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+/* Bottom highlight banner */
+.bottomBanner {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, rgba(107, 33, 168, 0.06) 0%, rgba(201, 169, 110, 0.06) 100%);
+  border-radius: 24px;
+  border: 1px solid rgba(107, 33, 168, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bottomBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(107, 33, 168, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.bannerTitle {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.bannerSubtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .earningsCard {
+    order: 2;
+  }
+
+  .benefitsSide {
+    order: 1;
+  }
+}
+
+@media (max-width: 540px) {
+  .earningsCard {
+    padding: 1.5rem;
+  }
+
+  .benefitsQuote {
+    font-size: 1.25rem;
+  }
+
+  .totalValue {
+    font-size: 1.15rem;
+  }
+
+  .revenueRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
