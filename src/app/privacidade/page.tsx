@@ -29,7 +29,9 @@ export default function PrivacyPolicy() {
                 <li>Nome / Nome artístico;</li>
                 <li>Número de telefone / WhatsApp;</li>
                 <li>Endereço de e-mail;</li>
-                <li>Links e nomes de contas em plataformas de terceiros (OnlyFans, Privacy, Instagram, etc);</li>
+                {/* [OF/Adult] Referência a plataformas adultas comentada para público geral */}
+                {/* <li>Links e nomes de contas em plataformas de terceiros (OnlyFans, Privacy, Instagram, etc);</li> */}
+                <li>Links e nomes de contas em plataformas de terceiros (Twitch, YouTube, TikTok, Instagram, etc);</li>
                 <li>Quaisquer outras informações enviadas voluntariamente por você no campo de mensagens.</li>
               </ul>
 

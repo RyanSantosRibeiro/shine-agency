@@ -7,9 +7,13 @@ import { ArrowLeft, Calendar, Tag } from 'lucide-react'
 import styles from './Blog.module.css'
 
 export const metadata = {
-  title: 'Blog da Shine Agency | Dicas para Crescer no Privacy e OnlyFans',
-  description: 'O maior guia de estratégias e marketing para streamers. Dicas práticas de gestão, produção e tráfego para viver de redes sociais.',
-  keywords: ['agência onlyfans', 'como crescer no privacy', 'dicas para streamers', 'ganhar dinheiro com conteúdo', 'agenciamento de modelos']
+  title: 'Blog da Shine Agency | Dicas para Crescer no Streaming',
+  description: 'Dicas práticas para viralizar no TikTok, YouTube e Twitch.',
+  // [OF/Adult] Keywords e títulos originais comentados para público geral
+  // title: 'Blog da Shine Agency | Dicas para Crescer no Privacy e OnlyFans',
+  // description: 'O maior guia de estratégias e marketing para streamers. Dicas práticas de gestão, produção e tráfego para viver de redes sociais.',
+  // keywords: ['agência onlyfans', 'como crescer no privacy', 'dicas para streamers', 'ganhar dinheiro com conteúdo', 'agenciamento de modelos']
+  keywords: ['streamer', 'como crescer na twitch', 'dicas para streamers', 'agência de criadores de conteúdo', 'viralizar no tiktok']
 }
 
 export default function BlogList() {
@@ -26,10 +30,12 @@ export default function BlogList() {
               <ArrowLeft size={16} /> Voltar para o início
             </Link>
             <h1 className="heading-xl">
-              Sex<span className="text-gradient-gold">Blog</span>
+              {/* Sex<span className="text-gradient-gold">Blog</span> */}
+              Shine<span className="text-gradient-gold">Blog</span>
             </h1>
             <p className={styles.subtitle}>
-              Conhecimento, estratégias e novidades sobre o mercado de conteúdo adulto.
+              {/* Conhecimento, estratégias e novidades sobre o mercado de conteúdo adulto. */}
+              Conhecimento, estratégias e novidades sobre o mercado de streaming.
             </p>
           </div>
 

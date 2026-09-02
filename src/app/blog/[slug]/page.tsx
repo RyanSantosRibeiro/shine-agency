@@ -102,7 +102,8 @@ export default async function BlogPostPage({ params }: any) {
               <div className={styles.authorInfo}>
                 <h3 className={styles.authorName}>Equipe Shine Agency</h3>
                 <p className={styles.authorDesc}>
-                  Especialistas em gestão, marketing e planejamento de carreiras no mercado adulto. Nossa missão é 
+                  {/* Especialistas em gestão, marketing e planejamento de carreiras no mercado adulto. Nossa missão é  */}
+                  Especialistas em gestão, marketing e planejamento de carreiras no mercado de streaming. Nossa missão é 
                   ajudar criadoras a transformarem suas redes sociais em empresas rentáveis, garantindo escala, 
                   proteção e bem-estar.
                 </p>
