@@ -23,7 +23,7 @@ import styles from './Earnings.module.css'
 const scenarios = [
   {
     id: 'starter',
-    label: '5K-15K seguidores',
+    label: '50K-100K seguidores',
     description: 'Streamer em crescimento, 3-6 meses de operação Shine',
     revenues: [
       { icon: <MonitorPlay size={16} />, name: 'Subs Twitch / Kick', value: 'R$ 2.000 — R$ 6.000' },
@@ -37,7 +37,7 @@ const scenarios = [
   },
   {
     id: 'pro',
-    label: '30K+ seguidores',
+    label: '100K+ seguidores',
     description: 'Streamer estabelecida, 6-12 meses de operação Shine',
     revenues: [
       { icon: <MonitorPlay size={16} />, name: 'Subs Twitch / Kick', value: 'R$ 8.000 — R$ 25.000' },
