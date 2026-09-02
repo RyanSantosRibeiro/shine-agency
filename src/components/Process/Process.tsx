@@ -14,13 +14,17 @@ const steps = [
     number: '02',
     title: 'Produção Premium',
     description:
-      'Lançamento de Sets exclusivos. Produzimos teasers e videos perfeitos (ganchos) para assinaturas.',
+      // [OF/Adult] Descrição original citava "Sets exclusivos" para plataformas adultas — comentado para público geral
+      // 'Lançamento de Sets exclusivos. Produzimos teasers e videos perfeitos (ganchos) para assinaturas.'
+      'Produzimos vídeos e clipes de alta qualidade, criando "ganchos" perfeitos para alavancar seu crescimento nas plataformas.',
   },
   {
     number: '03',
     title: 'Lucro Real',
     description:
-      'Convertendo o alcance gratuito em dinheiro: gerenciamos suas postagens, preços e vendas automáticas Privacy/OnlyFans.',
+      // [OF/Adult] Texto original mencionava "Privacy/OnlyFans" como canais de monetização — comentado para público geral
+      // 'Convertendo o alcance gratuito em dinheiro: gerenciamos suas postagens, preços e vendas automáticas Privacy/OnlyFans.'
+      'Convertendo o alcance gratuito em dinheiro: gerenciamos suas postagens, preços e vendas automáticas nas plataformas certas.',
   },
   {
     number: '04',

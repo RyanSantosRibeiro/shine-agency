@@ -11,7 +11,8 @@ const testimonials = [
     quote:
       'Em 3 meses com a Shine minha receita triplicou. Mas mais do que isso, me sinto apoiada e com direção clara. Não é só dinheiro, é qualidade de vida.',
     stars: 5,
-    role: 'Criadora — OnlyFans & Privacy',
+    // [OF/Adult] role original: 'Criadora — OnlyFans & Privacy' — comentado para público geral
+    role: 'Criadora de Conteúdo',
   },
   {
     name: 'Luna M.',
@@ -19,7 +20,8 @@ const testimonials = [
     quote:
       'Antes eu ficava perdida em postagens sem estratégia. A equipe cuida de tudo: edição, horários, resposta de DMs. Sobrou tempo para eu criar conteúdo de verdade.',
     stars: 5,
-    role: 'Streamer Adulta',
+    // [OF/Adult] role original: 'Streamer Adulta' — comentado para público geral
+    role: 'Streamer',
   },
   {
     name: 'Valentina K.',

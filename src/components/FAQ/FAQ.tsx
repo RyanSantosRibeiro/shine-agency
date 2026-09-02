@@ -10,10 +10,11 @@ const faqs = [
     question: 'Eu preciso pagar alguma taxa para entrar na agência?',
     answer: 'Não. A Shine Agency atua em um modelo de parceria (revenue share). Nós só ganhamos se você ganhar. Investimos nossa infraestrutura, tráfego e time de gestão em você, em troca de um percentual justo acordado previamente do seu faturamento. Sem surpresas ou taxas ocultas.',
   },
-  {
-    question: 'A minha conta do OnlyFans/Privacy fica sendo de vocês?',
-    answer: 'De forma alguma. As contas continuam sendo legalmente suas, registradas no seu nome e dados bancários. Nós apenas temos acesso administrativo para realizar postagens, chats e aplicar nosso Método de funil de vendas.',
-  },
+  // [OF/Adult] Pergunta sobre titularidade de contas OF/Privacy — comentado para público geral
+  // {
+  //   question: 'A minha conta do OnlyFans/Privacy fica sendo de vocês?',
+  //   answer: 'De forma alguma. As contas continuam sendo legalmente suas, registradas no seu nome e dados bancários. Nós apenas temos acesso administrativo para realizar postagens, chats e aplicar nosso Método de funil de vendas.',
+  // },
   {
     question: 'Como funciona a questão de Academia, Estética e Psicólogo?',
     answer: 'Tratar a modelo como o talento principal exige cuidado físico e mental real. No Modelo Shine, ao entrar ou atingir metas básicas estabelecidas, os custos com manicure, cabeleireiro, depilação a laser, academia e sessões regulares de terapia com psicóloga são fornecidos gratuitamente pela agência como nosso pacote de aceleração.',
@@ -22,10 +23,11 @@ const faqs = [
     question: 'Não quero mostrar o meu rosto. Posso me candidatar assim mesmo?',
     answer: 'Sim! Nosso time avalia e aceita perfis "Faceless" (Sem Rosto) baseados na sua personalidade. Estratégias Faceless necessitam de um "ângulo forte" e uma gestão muito incisiva nas redes sociais, área onde nosso time atua ativamente.',
   },
-  {
-    question: 'O meu conteúdo sofre risco de vazamento?',
-    answer: 'Toda criadora lida com esse risco na carreira, mas nossa prioridade é a sua paz. Temos recursos direcionados (DMCA) operando em varredura para rastrear fotos vazadas ou pirataria, entrando com solicitações jurídicas de forma consistente para remover materiais não-autorizados do Google, Fóruns ou Telegram.',
-  }
+  // [OF/Adult] Pergunta sobre vazamentos/DMCA — específica de plataformas adultas, comentado para público geral
+  // {
+  //   question: 'O meu conteúdo sofre risco de vazamento?',
+  //   answer: 'Toda criadora lida com esse risco na carreira, mas nossa prioridade é a sua paz. Temos recursos direcionados (DMCA) operando em varredura para rastrear fotos vazadas ou pirataria, entrando com solicitações jurídicas de forma consistente para remover materiais não-autorizados do Google, Fóruns ou Telegram.',
+  // }
 ]
 
 export default function FAQ() {

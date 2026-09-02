@@ -2,15 +2,15 @@
 
 import { motion } from 'framer-motion'
 import {
-  Video,
+  // Video,  // [OF/Adult] usado no card de Produção Audiovisual adulta
   BarChart3,
-  Users,
+  // Users,
   Camera,
   Dumbbell,
   Heart,
   Sparkles,
-  BadgeCheck,
-  Shield
+  // BadgeCheck,  // [OF/Adult] usado no card de Gestão Privacy e OF
+  // Shield        // [OF/Adult] usado no card de Anti-Vazamentos (DMCA)
 } from 'lucide-react'
 import styles from './Services.module.css'
 
@@ -29,20 +29,22 @@ const services = [
       'Operação de clipagem! Pegamos uma live e criamos dezenas de cortes curtos (TikTok/Shorts) para alcance viral.',
     color: 'accent',
   },
-  {
-    icon: <Video size={28} />,
-    title: 'Produção Audiovisual',
-    description:
-      'Direção, fotografia e vídeo em estúdio para criar conteúdo adulto de alta retenção e "ganchos" infalíveis.',
-    color: 'pink',
-  },
-  {
-    icon: <BadgeCheck size={28} />,
-    title: 'Gestão Privacy e OF',
-    description:
-      'Uplods semanais, descrição provocante com gatilhos de vendas e precificação agressiva. Nós lidamos com a burocracia.',
-    color: 'gold',
-  },
+  // [OF/Adult] Card de Produção Audiovisual adulta — comentado para público geral
+  // {
+  //   icon: <Video size={28} />,
+  //   title: 'Produção Audiovisual',
+  //   description:
+  //     'Direção, fotografia e vídeo em estúdio para criar conteúdo adulto de alta retenção e "ganchos" infalíveis.',
+  //   color: 'pink',
+  // },
+  // [OF/Adult] Gestão de plataformas Privacy e OnlyFans — comentado para público geral
+  // {
+  //   icon: <BadgeCheck size={28} />,
+  //   title: 'Gestão Privacy e OF',
+  //   description:
+  //     'Uplods semanais, descrição provocante com gatilhos de vendas e precificação agressiva. Nós lidamos com a burocracia.',
+  //   color: 'gold',
+  // },
   {
     icon: <Heart size={28} />,
     title: 'Suporte Psicológico',
@@ -64,13 +66,14 @@ const services = [
       'Assinatura de academia e acompanhamento nutricional integrados, blindando seu corpo, que é o seu maior ativo profissional.',
     color: 'gold',
   },
-  {
-    icon: <Shield size={28} />,
-    title: 'Anti-Vazamentos (DMCA)',
-    description:
-      'Time forense para encontrar e derrubar conteúdos "piratas", protegendo seu direito autoral em fóruns e canais grátis.',
-    color: 'accent',
-  },
+  // [OF/Adult] Card Anti-Vazamentos (DMCA) — específico de plataformas adultas, comentado para público geral
+  // {
+  //   icon: <Shield size={28} />,
+  //   title: 'Anti-Vazamentos (DMCA)',
+  //   description:
+  //     'Time forense para encontrar e derrubar conteúdos "piratas", protegendo seu direito autoral em fóruns e canais grátis.',
+  //   color: 'accent',
+  // },
 ]
 
 const containerVariants = {

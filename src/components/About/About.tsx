@@ -11,7 +11,8 @@ const differentials = [
   'Profissionalização: Você é nossa maior estrela, então cuidamos de toda parte técnica para você focar no que importa.',
   'Ajuda: Temos todo suporte necessário para sua saúde, academia e rede de estética.',
   'Geração de Conteúdo: Produção de conteúdo de alta qualidade para as redes sociais.',
-  'Operação Invisível: Fazemos todo o gerenciamento, upload, descrições e precificação nas plataformas. Você só atua.',
+  // [OF/Adult] Referência a upload/descrição/precificação em plataformas adultas — comentado para público geral
+  // 'Operação Invisível: Fazemos todo o gerenciamento, upload, descrições e precificação nas plataformas. Você só atua.',
 ]
 
 export default function About() {
@@ -64,8 +65,8 @@ export default function About() {
                 </svg>
               </motion.div>
 
-              {/* OnlyFans */}
-              <motion.div
+              {/* OnlyFans — [OF/Adult] logo comentado para público geral */}
+              {/* <motion.div
                 className={`${styles.floatCard} ${styles.floatCard4}`}
                 animate={{ y: [5, -5, 5] }}
                 transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: 1.2 }}
@@ -73,7 +74,7 @@ export default function About() {
                 <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm1.264 4.722c1.7 0 3.078 1.378 3.078 3.078 0 1.7-1.378 3.078-3.078 3.078-1.7 0-3.078-1.378-3.078-3.078 0-1.7 1.378-3.078 3.078-3.078zm.052 1.231c-.131 0-.237.106-.237.237v1.185h-1.185c-.131 0-.237.106-.237.237s.106.237.237.237h1.185v1.185c0 .131.106.237.237.237s.237-.106.237-.237v-1.185h1.185c.131 0 .237-.106.237-.237s-.106-.237-.237-.237h-1.185V8.19c0-.131-.106-.237-.237-.237zM4.8 12h14.4c0 3.976-3.224 7.2-7.2 7.2S4.8 15.976 4.8 12z" fill="#00AFF0" />
                 </svg>
-              </motion.div>
+              </motion.div> */}
 
               {/* Privacy */}
               <motion.div
