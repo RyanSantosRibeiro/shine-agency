@@ -8,7 +8,7 @@ import styles from './Blog.module.css'
 
 export const metadata = {
   title: 'Blog da Shine Agency | Dicas para Crescer no Privacy e OnlyFans',
-  description: 'O maior guia de estratégias e marketing para criadoras de conteúdo adulto. Dicas práticas de gestão, produção e tráfego para viver de redes sociais.',
+  description: 'O maior guia de estratégias e marketing para streamers. Dicas práticas de gestão, produção e tráfego para viver de redes sociais.',
   keywords: ['agência onlyfans', 'como crescer no privacy', 'dicas para streamers', 'ganhar dinheiro com conteúdo', 'agenciamento de modelos']
 }
 
@@ -37,8 +37,8 @@ export default function BlogList() {
             {posts.map((post) => (
               <Link href={`/blog/${post.slug}`} key={post.slug} className={`card ${styles.card}`}>
                 <div className={styles.imageWrapper}>
-                  <Image 
-                    src={post.image} 
+                  <Image
+                    src={post.image}
                     alt={post.title}
                     fill
                     className={styles.image}
@@ -50,13 +50,13 @@ export default function BlogList() {
                 <div className={styles.content}>
                   <h2 className={styles.title}>{post.title}</h2>
                   <p className={styles.excerpt}>{post.excerpt}</p>
-                  
+
                   <div className={styles.meta}>
                     <span className={styles.metaItem}>
                       <Calendar size={14} /> {post.date}
                     </span>
                   </div>
-                  
+
                   <span className={styles.readMore}>
                     Leia mais &raquo;
                   </span>

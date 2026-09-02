@@ -26,7 +26,7 @@ export default function Home() {
         {/* <BlogSlider /> */}
         <Contact />
         <FAQ />
-        <CTA />
+        {/* <CTA /> */}
       </main>
       <Footer />
     </>

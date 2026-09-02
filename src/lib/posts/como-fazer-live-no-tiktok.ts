@@ -2,7 +2,7 @@ import { Post } from '../posts'
 
 export const postTikTokLive: Post = {
   slug: 'como-fazer-live-no-tiktok-passo-a-passo',
-  title: 'Como Fazer Live no TikTok: O Guia para Criadoras de Conteúdo Adulto',
+  title: 'Como Fazer Live no TikTok: O Guia para streamers',
   excerpt: 'Aprenda como fazer live no TikTok, entenda os requisitos mínimos de seguidores e como usar as transmissões ao vivo para explodir seu faturamento na Privacy e OnlyFans.',
   date: '21 Abril 2026',
   category: 'Crescimento',

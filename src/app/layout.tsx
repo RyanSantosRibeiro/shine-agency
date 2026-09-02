@@ -5,13 +5,14 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Shine Agency | Estruturando o Sucesso de Criadoras de Conteúdo',
   description:
-    'A Shine Agency é especializada em dar toda a estrutura para criadoras de conteúdo adulto crescerem: edição, gerenciamento de redes, produção, suporte à modelo, academia e estética.',
+    'A Shine Agency é especializada em dar toda a estrutura para streamers crescerem: edição, gerenciamento de redes, produção, suporte à modelo, academia e estética.',
   keywords: [
     'agência criadora de conteúdo',
-    'only fans agency',
+    'streamer',
     'gestão de criadoras',
     'shine agency',
-    'agência conteúdo adulto brasil',
+    'agência de streamer',
+    'agência de criadoras de conteúdo'
   ],
   openGraph: {
     title: 'Shine Agency | Estruturando o Sucesso de Criadoras de Conteúdo',
